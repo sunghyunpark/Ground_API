@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhose/ground_dev');
 
 var User = require('./model/user');
 
-app.use(bodyParser.urlencoded({ extends: true }));
+app.use(bodyParser.urlencoded({ extends: false }));
 app.use(bodyParser.json());
 
 app.use('/v1/api/users', require('./routes/users')(app, User));
