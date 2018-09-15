@@ -18,5 +18,6 @@ module.exports = function(app)
 
       res.json({result : 1});
     })
-  })
+  });
+  
 }
