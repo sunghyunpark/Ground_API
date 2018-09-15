@@ -1,4 +1,4 @@
-module.exports = function(app)
+module.exports = function(app, User)
 {
   app.get('/', function(req, res) {
 
@@ -19,5 +19,5 @@ module.exports = function(app)
       res.json({result : 1});
     })
   });
-  
+
 }
