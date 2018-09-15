@@ -2,8 +2,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var router = express.Router();
 
-router.get('/', function(req, res) {
-  console.log("hihi");
+router.get('/:no', function(req, res) {
+  console.log(req.params.no);
 });
 
 router.post('/', function(req, res) {
