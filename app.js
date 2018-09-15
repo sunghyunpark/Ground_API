@@ -2,6 +2,7 @@ var express     = require('express');
 var app         = express();
 var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
+/*
 var db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function() {
@@ -11,7 +12,7 @@ db.once('open', function() {
 mongoose.connect('mongodb://localhose/ground_dev');
 
 var User = require('./model/user');
-
+*/
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
