@@ -15,7 +15,7 @@ var User = require('./model/user');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/v1/api/users', require('./routes/users')(app, User));
+app.use('/v1/api/users', require('./routes/users')(express.Router(), User));
 
 var server = app.listen(1038, function() {
   console.log("Express server has started on port " + 1038)
